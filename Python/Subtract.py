@@ -10,26 +10,28 @@ def subtract():
     print("| Add your first number:           |")
     print("|__________________________________|")
 
-    num1 = float(input(""))
+    num = float(input(""))
 
-    print(" __________________________________")
-    print("| Calculator                       |")
-    print("|----------------------------------|")
-    print("|                                  |")
-    print("| Add your second number:          |")
-    print("|__________________________________|")
+    def operation_Subtract(num1):
 
-    num2 = float(input(""))
+        print(" __________________________________")
+        print("| Calculator                       |")
+        print("|----------------------------------|")
+        print("|                                  |")
+        print("| Add your second number:          |")
+        print("|__________________________________|")
 
-    result = num1 - num2
-    num1 = str(num1)
-    num2 = str(num2)
-    result = str(result)
-    print(" _______________________________________")
-    print("| Calculator                            |")
-    print("|---------------------------------------|")
-    print("|                                       |")
-    print("| The result of " + num1 + " minus " + num2 + " is " + result +"   |")
-    print("|_______________________________________|")
+        num2 = float(input(""))
 
-subtract()
+        result = num1 - num2
+        num1 = str(num1)
+        num2 = str(num2)
+        result = str(result)
+        print(" _______________________________________")
+        print("| Calculator                            |")
+        print("|---------------------------------------|")
+        print("|                                       |")
+        print("| The result of " + num1 + " minus " + num2 + " is " + result +"   |")
+        print("|_______________________________________|")
+
+        operation_Subtract(num)
