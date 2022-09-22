@@ -1,16 +1,7 @@
+from Add import Ask_first
+
+
 def subtract():
-
-    num1 = 0
-    num2 = 0
-
-    print(" __________________________________")
-    print("| Calculator                       |")
-    print("|----------------------------------|")
-    print("|                                  |")
-    print("| Add your first number:           |")
-    print("|__________________________________|")
-
-    num = float(input(""))
 
     def operation_Subtract(num1):
 
@@ -34,4 +25,22 @@ def subtract():
         print("| The result of " + num1 + " minus " + num2 + " is " + result +"   |")
         print("|_______________________________________|")
 
+        valor_continue = Continue_Change()
+
+        if(valor_continue == True):
+            num1 = result
+        if(valor_continue == False):
+            num1 = float(Ask_first())
+        if(valor_continue == 0):
+            break
+        else:
+            print(" _______________________________________")
+            print("| Calculator                            |")
+            print("|---------------------------------------|")
+            print("|                                       |")
+            print("| The answer you enter isnt sccepted    |")
+            print("|_______________________________________|")
+            
+
+        num = Ask_first()
         operation_Subtract(num)

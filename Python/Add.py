@@ -53,6 +53,13 @@ def Add_funtion():
             num1 = float(Ask_first())
         if(valor_continue == 0):
             break
+        else:
+            print(" _______________________________________")
+            print("| Calculator                            |")
+            print("|---------------------------------------|")
+            print("|                                       |")
+            print("| The answer you enter isnt sccepted    |")
+            print("|_______________________________________|")
 
 
 
